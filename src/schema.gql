@@ -1,0 +1,29 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Event {
+  """Example field (placeholder)"""
+  title: String!
+}
+
+type Query {
+  event(id: Int!): Event!
+}
+
+type Mutation {
+  createEvent(createEventInput: CreateEventInput!): Event!
+  updateEvent(updateEventInput: UpdateEventInput!): Event!
+  removeEvent(id: Int!): Event!
+}
+
+input CreateEventInput {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
+input UpdateEventInput {
+  """Example field (placeholder)"""
+  exampleField: Int
+  id: Int!
+}
